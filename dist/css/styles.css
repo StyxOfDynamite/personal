@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
 * Start Bootstrap - Personal v1.0.1 (https://startbootstrap.com/template-overviews/personal)
-* Copyright 2013-2023 Start Bootstrap
+* Copyright 2013-2024 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-personal/blob/master/LICENSE)
 */
 /*!
@@ -10,6 +10,7 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Knewave&family=Zen+Loop:ital@0;1&display=swap");
 :root {
   --bs-blue: #1e30f3;
   --bs-indigo: #6610f2;
@@ -11551,6 +11552,8 @@ textarea.form-control-lg {
 }
 body,
 html {
+  font-family: "Zen Loop", cursive;
+  font-size: 1.2rem;
   height: 100%;
 }
 
