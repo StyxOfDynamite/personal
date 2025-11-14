@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luke Storer - Chief Technology Officer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <style>
+        /* CSS is embedded here for easy sharing */
+        :root {
+            --primary-color: #0d9847;
+            /* Forest Green Accent */
+            --secondary-color: #0a0a0a;
+            /* Dark Gray Text */
+            --light-gray: #eeeeeeca;
+            /* Section Separator */
+            --header-font: 'Zalando Sans SemiExpanded', sans-serif;
+            --body-font: 'Zalando Sans SemiExpanded', sans-serif;
+        }
+
+        body {
+            font-family: var(--body-font);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--secondary-color);
+            background-color: white;
+            display: flex;
+            justify-content: center;
+        }
+
+        .cv-container {
+            width: 210mm;
+            /* A4 width for printing/viewing */
+            min-height: 297mm;
+            /* A4 height */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            box-sizing: border-box;
+        }
+
+        /* --- Header Section --- */
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid var(--primary-color);
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: var(--secondary-color);
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            color: #555;
+            margin: 5px 0 10px 0;
+        }
+
+        .contact-info {
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        .contact-info span:not(:last-child)::after {
+            content: " | ";
+            color: var(--primary-color);
+        }
+
+        /* --- Section Styling --- */
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 1.4em;
+            font-weight: 700;
+            color: var(--primary-color);
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid var(--light-gray);
+            text-transform: uppercase;
+        }
+
+        /* --- Job Entry Styling --- */
+        .job-entry {
+            margin-bottom: 18px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 2px;
+        }
+
+        .job-title {
+            font-size: 1.1em;
+            font-weight: 700;
+            color: var(--secondary-color);
+        }
+
+        .job-dates {
+            font-size: 0.9em;
+            font-weight: 400;
+            color: #555;
+        }
+
+        .company-name {
+            font-size: 1em;
+            font-weight: 400;
+            color: #555;
+            margin-top: -3px;
+            display: block;
+        }
+
+        .accomplishments {
+            padding-left: 20px;
+            margin-top: 5px;
+            list-style-type: disc;
+            font-size: 0.95em;
+        }
+
+        .accomplishments li {
+            margin-bottom: 6px;
+        }
+
+        .job-description {
+            font-style: italic;
+            font-size: 0.95em;
+            color: #777;
+            margin-bottom: 5px;
+        }
+
+        /* --- Education & Skills Styling (Emphasis) --- */
+        .education-entry {
+            margin-bottom: 15px;
+        }
+
+        .degree {
+            font-weight: 700;
+            color: var(--secondary-color);
+        }
+
+        .institution {
+            font-style: italic;
+            font-size: 0.95em;
+            color: #555;
+        }
+
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-item {
+            background-color: var(--light-gray);
+            color: var(--secondary-color);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            font-weight: 500;
+        }
+
+        .skill-category-title {
+            font-weight: 700;
+            color: var(--secondary-color);
+            margin-top: 10px;
+            margin-bottom: 5px;
+            border-bottom: 1px dashed var(--light-gray);
+            padding-bottom: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cv-container">
+
+        <header class="header">
+            <h1>Luke Storer</h1>
+            <p>Chief Technology Officer | Engineering Lead</p>
+            <div class="contact-info">
+                <span>+44 7376 477 967</span>
+                <span>lads89@gmail.com</span>
+                <span>Leicester, UK</span>
+                <span><a href="https://www.linkedin.com/in/luke-builds-cool-stuff">LinkedIn</a></span>
+            </div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title">Personal Summary</h2>
+            <p>A driven and determined software engineer, with experience across the full stack, I enjoy bouldering, learning to juggle, my children, and effective grammar.</p>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Professional Experience</h2>
+
+            <div class="job-entry">
+                <div class="job-header">
+                    <span class="job-title">Chief Technology Officer</span>
+                    <span class="job-dates">Jul 2023 – Present</span>
+                </div>
+                <span class="company-name">Partner.io | Leicester, UK</span>
+                <p class="job-description">Led the strategic and technical direction for the Partner Relationship
+                    Management platform, overseeing architecture, delivery, and scaling the engineering organization.
+                </p>
+                <ul class="accomplishments">
+                    <li>Successfully launched Partner.io from a greenfield concept to a production platform serving 400+
+                        SaaS companies, driving rapid market adoption.</li>
+                    <li>Scaled the engineering team from a single developer (myself) to a high-performing global team of
+                        10 engineers across 4 time zones, ensuring seamless collaboration and delivery.</li>
+                    <li>Designed and delivered the ECS deployment architecture for the core API, establishing a
+                        resilient, scalable, and cost-efficient cloud infrastructure (AWS).</li>
+                    <li>Oversaw architectural decision-making, ensuring a robust, maintainable, and scalable foundation
+                        for all proprietary software products.</li>
+                </ul>
+            </div>
+
+            <div class="job-entry">
+                <div class="job-header">
+                    <span class="job-title">Software Engineer</span>
+                    <span class="job-dates">Apr 2022 – Jul 2023</span>
+                </div>
+                <span class="company-name">Silktide | Leicester, UK</span>
+                <p class="job-description">Contributed to the core engineering team focused on building best-in-class
+                    web governance and accessibility software.</p>
+                <ul class="accomplishments">
+                    <li>Developed and shipped the cookie-free analytics module, ensuring a privacy-first,
+                        GDPR-compliant tracking solution that met stringent client requirements.</li>
+                    <li>Built a dedicated reporting Lambda function to automatically process Dependabot alerts and
+                        create actionable tickets, ensuring SOC-2 compliant resolution timeframes.</li>
+                    <li>Contributed heavily to front-end and back-end features, improving the user experience and
+                        reliability of the primary web accessibility application.</li>
+                </ul>
+            </div>
+
+            <div class="job-entry">
+                <div class="job-header">
+                    <span class="job-title">Software Engineer</span>
+                    <span class="job-dates">Apr 2021 – May 2022</span>
+                </div>
+                <span class="company-name">Navitas Safety | Leicester, UK</span>
+                <p class="job-description">Engineered applications for Commercial Food Safety, Compliance, and Learning
+                    platforms.</p>
+                <ul class="accomplishments">
+                    <li>Engineered a scalable Pub/Sub solution for the high-volume processing and real-time ingestion of
+                        inbound data points related to appliance temperatures and safety metrics.</li>
+                    <li>Integrated third-party APIs and built robust data synchronization services, improving the
+                        reliability of compliance reporting.</li>
+                </ul>
+            </div>
+
+            <div class="job-entry">
+                <p class="job-description" style="margin-bottom: 0;">Earlier Experience: Senior PHP Developer at Avado
+                    (Sep 2020 – Apr 2021); Web Developer at Reviews.io & Reviews.co.uk (Jan 2017 – Aug 2020).</p>
+            </div>
+
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-section">
+                <div class="skill-category">
+                    <div class="skill-category-title">Leadership & Architecture</div>
+                    <ul class="skills-list">
+                        <li class="skill-item">Team Scaling & Management</li>
+                        <li class="skill-item">SaaS Architecture</li>
+                        <li class="skill-item">Technical Strategy</li>
+                        <li class="skill-item">Cloud Deployment</li>
+                        <li class="skill-item">Greenfield Development</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-title">Cloud & DevOps</div>
+                    <ul class="skills-list">
+                        <li class="skill-item">AWS (ECS, Lambda, S3)</li>
+                        <li class="skill-item">Docker</li>
+                        <li class="skill-item">CI/CD</li>
+                        <li class="skill-item">Git/GitHub</li>
+                        <li class="skill-item">Pub/Sub</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-title">Languages & Frameworks</div>
+                    <ul class="skills-list">
+                        <li class="skill-item">PHP / Laravel</li>
+                        <li class="skill-item">JavaScript / Node.js</li>
+                        <li class="skill-item">MySQL / PostgreSQL</li>
+                        <li class="skill-item">HTML / CSS / React</li>
+                        <li class="skill-item">Python</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section"
+            style="padding: 10px; background-color: var(--light-gray); border-left: 5px solid var(--primary-color);">
+            <h2 class="section-title" style="border-bottom: 1px solid #AAA;">Education</h2>
+            <div class="education-entry">
+                <div class="degree">BSc (Hons) Software Engineering</div>
+                <div class="institution">De Montfort University, Leicester</div>
+                <div class="job-dates">2012</div>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+</html>
